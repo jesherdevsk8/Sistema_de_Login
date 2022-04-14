@@ -20,6 +20,7 @@ $consulta->bindParam(':email', $email);
 $consulta->bindParam(':senha', $senha_criptografada);
 $result = $consulta->execute();
 
+
 // numero de linhas da consulta
 $numero_linhas = $consulta->rowCount();
 

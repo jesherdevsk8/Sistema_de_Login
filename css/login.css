@@ -1,0 +1,27 @@
+html,body {
+    font-family: 'Open Sans', serif;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .hero.is-success {
+    background: #f2f7fa;
+  }
+  .hero .nav, .hero.is-success .nav {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  input {
+    font-weight: 300;
+  }
+  p {
+    font-weight: 700;
+  }
+  .button.is-link {
+      background-color: #0B6E9A;
+      border-color: transparent;
+      color: #fff;
+  }
+  .hero.is-link {
+      background-color: #0b6e9a;
+      color: #fff;
+  }

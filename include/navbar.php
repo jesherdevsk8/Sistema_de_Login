@@ -27,8 +27,8 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualizar <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Usuário</a></li>
-                            <li><a href="#">Cliente</a></li>
+                            <li><a href="visualizarUsuario.php">Usuários</a></li>
+                            <li><a href="visualizarCliente.php">Clientes</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -37,7 +37,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?= $email ?> <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Perfil</a></li>
-                            <li><a href="#">Trocar senha</a></li>
+                            <li><a href="visualizarUsuario.php">Trocar senha</a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="include/sair.php">Sair</a></li>
                         </ul>

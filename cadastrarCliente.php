@@ -19,7 +19,7 @@ $administrador  = $_SESSION['administrador'];
 <html lang="pt-br">
   <head>
     <?php include('include/header.php'); ?>
-    <title>Cadastro de Usuário</title>
+    <title>Cadastro de cliente</title>
   </head>
   <body>
     
@@ -36,40 +36,38 @@ $administrador  = $_SESSION['administrador'];
                         <!-- formulario -->
                         <form method="POST" action="include/cadastrarCliente.php">
                             <div class="form-group">
-                                <label>Nome</label>
-                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" required>
+                                <label>Nome do cliente</label>
+                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome">
                             </div>
                             <div class="form-group">
                                 <label>Logradouro</label>
-                                <input type="text" class="form-control" id="logradouro" name="logradouro" placeholder="Endereço" required>
+                                <input type="text" class="form-control" id="logradouro" name="logradouro" placeholder="Logradouro">
                             </div>
                             <div class="form-group">
-                                <label>Número</label>
-                                <input type="number" class="form-control" id="num" name="num" placeholder="Número" required>
+                                <label>Numero</label>
+                                <input type="text" class="form-control" id="num" name="num" placeholder="numero">
                             </div>
                             <div class="form-group">
-                                <label>CEP</label>
-                                <input type="text" class="form-control" id="cep" name="cep" placeholder="CEP" required>
+                                <label>Cep</label>
+                                <input type="text" class="form-control" id="cep" name="cep" placeholder="cep">
                             </div>
                             <div class="form-group">
                                 <label>Cidade</label>
-                                <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Cidade" required>
+                                <input type="text" class="form-control" id="cidade" name="cidade" placeholder="cidade">
                             </div>
                             <div class="form-group">
                                 <label>Bairro</label>
-                                <input type="text" class="form-control" id="bairro" name="bairro" placeholder="Bairro" required>
+                                <input type="text" class="form-control" id="bairro" name="bairro" placeholder="bairro">
                             </div>
                             <div class="form-group">
                                 <label>Telefone</label>
-                                <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone" required>
+                                <input type="text" class="form-control" id="telefone" name="telefone" placeholder="telefone">
                             </div>
                             <div class="form-group">
                                 <label>Estado</label>
                                 <select class="form-control" name="estado" id="estado">
-                                  <option value="Nenhum">Nenhum</option>
-                                  <option value="Sao Paulo">São Paulo</option>
-                                  <option value="Minas Gerais">Minas Gerais</option>
-                                  <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                                  <option value="Sao Paulo">Sao Paulo</option>
+                                  <option value="Rio de Janeiro">Rio de Janeiro</option>
                                 </select>
                             </div>
                             <button type="submit" class="btn btn-success">Cadastrar</button>

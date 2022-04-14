@@ -3,14 +3,12 @@
 // definição de timezone
 date_default_timezone_set('America/Sao_Paulo');
 
-// pegar variaveis de mensagens
+// pegar variavel de mensagem
 $mensagem   = $_GET['mensagem'];
 $pagina     = $_GET['pagina'];
 $tipo       = $_GET['tipo'];
 
 if($mensagem == "ok-cadastrarUsuario"){
-  $msg = "Usuário cadastrado com sucesso!";
-}else if($mensagem == "ok-cadastrarCliente"){
   $msg = "Usuário cadastrado com sucesso!";
 }else if($mensagem == "area-admin"){
   $msg = "Login ou senha incorretos!";
@@ -22,11 +20,20 @@ if($mensagem == "ok-cadastrarUsuario"){
   $msg = "E-mail já cadastrado!";
 }else if($mensagem == "CadUsu-senha-branco"){
   $msg = "Senha em branco!";
-}else if($mensagem == "CadUsu-email-branco"){
-  $msg = "E-mail em branco!";
-}else if($mensagem == "Cliente-dados-em-branco"){
-  $msg = "Dados em branco!";
+}else if($mensagem == "cadastrarUsuario"){
+  $msg = "Erro ao editar usuario!";
+}else if($mensagem == "ok-editarUsuario"){
+  $msg = "Usuario editado com sucesso!";
+}else if($mensagem == "ok-deletarUsuario"){
+  $msg = "Usuario deletado com sucesso!";
+}else if($mensagem == "ok-deletarCliente"){
+  $msg = "Cliente deletado com sucesso!";
+}else if($mensagem == "ok-cadastrarCliente"){
+  $msg = "Cliente Cadastrado com sucesso!";
+}else if($mensagem == "ok-editarCliente"){
+  $msg = "Cliente alterado com sucesso!";
 }
+
 
 ?>
 <!DOCTYPE html>
